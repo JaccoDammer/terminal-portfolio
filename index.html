@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacco Dammer - Software Engineer</title>
+  
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <meta name="description" content="Interactive terminal-style portfolio of Jacco Dammer, a Java and Spring software engineer from the Netherlands." />
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Jacco Dammer - Software Engineer" />
+  <meta property="og:description" content="A playful terminal-style portfolio built with HTML, CSS, and JavaScript." />
+  <meta property="og:type" content="website" />
+  
+</head>
+<body>
+  <div id="base-text">
+    <p class="no-select prompt"><span class="accent">visitor</span>@<span class="link">portfolio.jekdev.net</span>:~$ welcome</p>
+    <pre class="ascii-banner">                                                        
+    __                    ____                          
+ __|  |___ ___ ___ ___   |    \ ___ _____ _____ ___ ___ 
+|  |  | .'|  _|  _| . |  |  |  | .'|     |     | -_|  _|
+|_____|__,|___|___|___|  |____/|__,|_|_|_|_|_|_|___|_|  
+                                                        <span class="muted">® since 1999</span></pre>
+    </div>
+    <p>Welcome to my interactive terminal portfolio</p>
+    <p>To view all possible commands, type '<span class="command">help</span>'</p>
+
+  <div id="terminal">
+    <div class="output"></div>
+    <div class="input-line">
+      <p class="no-select prompt"><span class="accent">visitor</span>@<span class="link">portfolio.jekdev.net</span>:~$</p>
+      <input type="text" id="command-input" autofocus />
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

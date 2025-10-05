@@ -1,0 +1,92 @@
+.theme-dark {
+  --bg: #1b1a1a;
+  --text: #ffffff;
+  --command: #e0eb3f;
+  --accent: #ff3fd5;
+  --link: #0077ff;
+  --error: #ff5277;
+  --muted: #737e83;
+}
+
+.theme-light {
+  --bg: #f1f1f1;
+  --text: #1c1c1c;
+  --command: #b58900;
+  --accent: #8200b5;
+  --link: #0112ff;
+  --error: #cc0022;
+  --muted: #363738;
+}
+
+html {
+  font-family: "Lucida Console", "DejaVu Sans Mono", Monaco, "Courier New",
+    monospace;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  line-height: 1.3;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.error {
+  color: var(--error);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.command {
+  color: var(--command);
+}
+
+.link {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
+.line {
+  display: flex;
+  gap: 1rem;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* command input box*/
+#command-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  width: 100%;
+  caret-color: var(--accent);
+}
+
+#command-input::-ms-clear {
+  display: none;
+} /* removed the x of the input box*/
+
+.hover:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
